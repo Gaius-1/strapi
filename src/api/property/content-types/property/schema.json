@@ -12,16 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "Location": {
+    "location": {
       "type": "string",
       "required": true
     },
-    "Category": {
-      "type": "string",
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "properties",
       "required": true
     },
     "Price": {

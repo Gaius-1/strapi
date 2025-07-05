@@ -60,7 +60,7 @@
     },
     "category": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToOne",
       "target": "api::category.category"
     }
   }

@@ -16,11 +16,13 @@
       "targetField": "item"
     },
     "item": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "stock": {
       "type": "integer",
-      "required": true
+      "required": true,
+      "min": 0
     },
     "isPopular": {
       "type": "boolean"

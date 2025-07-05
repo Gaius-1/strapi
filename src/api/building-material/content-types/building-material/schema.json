@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "building_materials",
+  "info": {
+    "singularName": "building-material",
+    "pluralName": "building-materials",
+    "displayName": "Building Material"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "item": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "price": {
+      "type": "float",
+      "required": true
+    },
+    "priceUpwardTrend": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

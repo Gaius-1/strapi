@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rentals",
+  "info": {
+    "singularName": "rental",
+    "pluralName": "rentals",
+    "displayName": "Rental"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "targetField": "item"
+    },
+    "item": {
+      "type": "string",
+      "required": true
+    },
+    "stock": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "isPopular": {
+      "type": "boolean"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

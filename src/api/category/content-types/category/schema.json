@@ -18,6 +18,18 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "properties": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::property.property",
+      "mappedBy": "category"
+    },
+    "project": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project.project",
+      "mappedBy": "category"
     }
   }
 }

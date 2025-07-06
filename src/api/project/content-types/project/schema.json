@@ -60,10 +60,8 @@
     },
     "category": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "projects",
-      "required": true
+      "relation": "oneToOne",
+      "target": "api::category.category"
     }
   }
 }

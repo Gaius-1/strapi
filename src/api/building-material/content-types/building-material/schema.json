@@ -25,7 +25,6 @@
     },
     "price": {
       "type": "decimal",
-      "columnType": "decimal(10,2)",
       "required": true
     },
     "priceUpwardTrend": {
